@@ -64,7 +64,6 @@ h3 {
 }
 
 #logo {
-  float: left;
   width: 250px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -75,11 +74,6 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
-}
-
-nav {
-  float: right;
-  margin-top: 25px;
 }
 
 nav a {
@@ -119,13 +113,22 @@ h3, h2 {
 
 /* main */
 
+.main-row{
+  min-height: calc(100vh - 120px);
+  margin-top: 30px;
+}
+
+.main-col{
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
 }
 
 .main-section {
-  float: left;
   width: 100%;
   max-width: 960px;
   padding: 30px;
@@ -138,7 +141,6 @@ h3, h2 {
 
 .work {
   position: relative;
-  float: left;
   width: 274px;
   margin: 20px 0 25px;
   overflow: auto;
@@ -169,7 +171,6 @@ h3, h2 {
 }
 
 .auth-image {
-  float: left;
   width: 200px;
   height: auto;
   margin-top: 10px;
@@ -214,4 +215,15 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+.nav-right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutMeImg{
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
